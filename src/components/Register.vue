@@ -92,9 +92,10 @@ export default {
     if (this.errorMessages.length > 0) {
       return;
     }
-
+    //https://backend-asp-net.vercel.app/api/Registration/login
+    //https://localhost:44356/api/Registration/registration
     try {
-      const response = await axios.post('https://localhost:44356/api/Registration/registration', {
+      const response = await axios.post('https://backend-asp-net.vercel.app/api/Registration/register', {
         Username: this.username,
         Email: this.email,
         Password: this.password,

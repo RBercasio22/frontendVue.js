@@ -90,8 +90,11 @@ export default {
   },
   methods: {
     async handleLogin() {
+
+      //https://backend-asp-net.vercel.app/api/Registration/login
+      //https://localhost:44356/api/Registration/login
       try {
-        const response = await axios.post('https://localhost:44356/api/Registration/login', {
+        const response = await axios.post('https://backend-asp-net.vercel.app/api/Registration/login', {
           Email: this.email,
           Password: this.password,
           isActive: 1
