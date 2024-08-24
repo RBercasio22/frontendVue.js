@@ -95,7 +95,7 @@ export default {
     //https://backend-asp-net.vercel.app/api/Registration/login
     //https://localhost:44356/api/Registration/registration
     try {
-      const response = await axios.post('https://backend-asp-net.vercel.app/api/Registration/register', {
+      const response = await axios.post('https://backend-asp-net.vercel.app/api/Registration/registration', {
         Username: this.username,
         Email: this.email,
         Password: this.password,
