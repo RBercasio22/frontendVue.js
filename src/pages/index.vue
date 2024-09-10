@@ -2,6 +2,7 @@
   
    <!-- <Login /> -->
 
+  <input v-model="ip" />
   
    
 
@@ -12,11 +13,13 @@
  import { ref } from 'vue' 
  import { netsh } from 'vue'
  import { ssh } from 'vue'
+ import { axios } from 'axios'
 
 
   const ip = ref()
   const port = ref()
   const connected = ref()
+  const list = ref([])
   
 function getIp(ip, port){
   computed(() => {
@@ -26,7 +29,14 @@ function getIp(ip, port){
   })
   
 }
-  
-  
+function pushData(){
+  connected = axios.get(() =>{
+
+    list.value.push({
+      
+    })
+  })
+}
+
 
 </script>
